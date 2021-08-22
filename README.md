@@ -10,11 +10,11 @@ The historical dataset we are using is imbalanced.  When we look at the value co
 
 The stages of development for the first machine learning model (based on the original data) were:
 * The data was split 75%/25% into training data and testing data.
-* An sklearn LogisticRegression() model was chosen, and the model was fit using the training feature data and and training target outcome data.
+* An `sklearn LogisticRegression()` model was chosen, and the model was fit using the training feature data and and training target outcome data.
 * Next, the model was used to make target predictions for the test feature data.
 * Finally, the model was evaluated by calculating a balanced accuracy score, a confusion matrix, and a classification report.
 
-These steps were repeated for the second machine learning model, again using a LogisticRegression() model.  However, this time, instead of fitting the model with the original training data, the imblearn RandomOverSampler() was used to randomly oversample the minority class, resulting in a balanced dataset containing equal amounts of healthy and high-risk loans.
+These steps were repeated for the second machine learning model, again using a `LogisticRegression()` model.  However, this time, instead of fitting the model with the original training data, the `imblearn RandomOverSampler()` was used to randomly oversample the minority class, resulting in a balanced dataset containing equal amounts of healthy and high-risk loans.
 
 The second machine learning model was used to make target predictions on the same test feature data as used before, and the same evaluation steps were performed for the second model.
 
